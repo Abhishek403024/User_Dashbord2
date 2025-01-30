@@ -1,0 +1,159 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('BackGround.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 24px 16px;
+}
+
+/* Container */
+.container {
+    background-image: url('BackGround.png');
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.header h1 {
+    color: #1f2937;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    color: #ef4444;
+    font-weight: 500;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 8px;
+}
+
+/* Icons */
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.card-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    background-color: #fef2f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.card p {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Device Lock */
+.device-lock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.device-lock-btn {
+    display: flex;
+    align-items: center;
+    color: #ef4444;
+    font-weight: 500;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 8px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 24px;
+    left: 16px;
+    right: 16px;
+}
+
+.nav-container {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #ef4444;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-btn.active {
+    background-color: #dc2626;
+    padding: 8px 24px;
+    border-radius: 9999px;
+    font-weight: 500;
+}
